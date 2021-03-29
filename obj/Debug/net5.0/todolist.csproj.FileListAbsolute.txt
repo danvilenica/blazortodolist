@@ -636,3 +636,6 @@ C:\dev\blazor\todolist\obj\Debug\net5.0\build-gz\TYPI2fo2.gz
 C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll
 C:\dev\blazor\todolist\obj\Debug\net5.0\build-gz\DnYmmatE.gz
+C:\dev\blazor\todolist\obj\Debug\net5.0\RazorDeclaration\Shared\TodoItem.razor.g.cs
+C:\dev\blazor\todolist\obj\Debug\net5.0\Razor\Shared\TodoItem.razor.g.cs
+C:\dev\blazor\todolist\obj\Debug\net5.0\scopedcss\Shared\TodoItem.razor.rz.scp.css

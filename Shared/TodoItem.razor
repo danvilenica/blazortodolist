@@ -1,0 +1,29 @@
+@using models
+
+<div class="todo-row">
+    <div @onclick="@ToggleTodo" class="@(TodoModel.Completed ? "completed": "")">@TodoModel.Text</div>
+    <button @onclick="@Remove">Remove</button>
+</div>
+
+@code{
+    [Parameter]
+    public Todo TodoModel { get; set; }
+    
+    [Parameter]
+    public EventCallback SaveTodos { get; set; }
+
+    [Parameter]
+    public EventCallback<Todo> RemoveTodo { get; set; }
+
+    public void ToggleTodo()
+    {
+        TodoModel.Completed = !TodoModel.Completed;
+        SaveTodos.InvokeAsync(null);
+    }
+
+    public void Remove()
+    {
+        TodoModel.Completed = !TodoModel.Completed;
+        RemoveTodo.InvokeAsync(TodoModel);
+    }
+}

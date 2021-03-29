@@ -289,6 +289,95 @@
         }
       },
       {
+        "HashCode": 449924677,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.TodoItem",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TodoItem"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TodoModel",
+            "TypeName": "todolist.models.Todo",
+            "Metadata": {
+              "Common.PropertyName": "TodoModel"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SaveTodos",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "SaveTodos",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "RemoveTodo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<todolist.models.Todo>",
+            "Metadata": {
+              "Common.PropertyName": "RemoveTodo",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.TodoItem"
+        }
+      },
+      {
+        "HashCode": -365364944,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.TodoItem",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.Shared.TodoItem"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TodoModel",
+            "TypeName": "todolist.models.Todo",
+            "Metadata": {
+              "Common.PropertyName": "TodoModel"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SaveTodos",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "SaveTodos",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "RemoveTodo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<todolist.models.Todo>",
+            "Metadata": {
+              "Common.PropertyName": "RemoveTodo",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.TodoItem",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1368883372,
         "Kind": "Components.Component",
         "Name": "todolist.App",
@@ -13015,6 +13104,11 @@
     {
       "FilePath": "c:\\dev\\blazor\\todolist\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\dev\\blazor\\todolist\\Shared\\TodoItem.razor",
+      "TargetPath": "Shared\\TodoItem.razor",
       "FileKind": "component"
     },
     {

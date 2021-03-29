@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace todolist.Pages
+namespace todolist.Shared
 {
     #line hidden
     using System;
@@ -83,21 +83,13 @@ using todolist.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\dev\blazor\todolist\Pages\Index.razor"
-using Newtonsoft.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\dev\blazor\todolist\Pages\Index.razor"
+#line 1 "C:\dev\blazor\todolist\Shared\TodoItem.razor"
 using models;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class TodoItem : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,49 +97,32 @@ using models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\dev\blazor\todolist\Pages\Index.razor"
+#line 8 "C:\dev\blazor\todolist\Shared\TodoItem.razor"
       
-    public string todoInput { get; set; }
-    public List<Todo> todos = new List<Todo>();
+    [Parameter]
+    public Todo TodoModel { get; set; }
+    
+    [Parameter]
+    public EventCallback SaveTodos { get; set; }
 
-    protected override async Task OnInitializedAsync()
+    [Parameter]
+    public EventCallback<Todo> RemoveTodo { get; set; }
+
+    public void ToggleTodo()
     {
-        todos = await GetStoredTodosAsync();
+        TodoModel.Completed = !TodoModel.Completed;
+        SaveTodos.InvokeAsync(null);
     }
 
-    public void AddTodo()
+    public void Remove()
     {
-        todos.Add(new Todo()
-        {
-            Id = Guid.NewGuid(),
-            Text = todoInput,
-            Completed = false
-        });
-        todoInput = "";
-        SaveTodos();
-    }
-
-    public void RemoveTodo(Todo todo)
-    {
-        todos.Remove(todo);
-        SaveTodos();
-    }
-
-    public void SaveTodos()
-    {
-        LocalStorage.SetItemAsync("SavedTodos", JsonConvert.SerializeObject(todos));
-    }
-
-    private async Task<List<Todo>> GetStoredTodosAsync()
-    {
-        var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");
-        return JsonConvert.DeserializeObject<List<Todo>>(storedTodos);
+        TodoModel.Completed = !TodoModel.Completed;
+        RemoveTodo.InvokeAsync(TodoModel);
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService LocalStorage { get; set; }
     }
 }
 #pragma warning restore 1591

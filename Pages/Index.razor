@@ -1,18 +1,18 @@
 ﻿@page "/"
-@using models
 @using Newtonsoft.Json
+@using models
 
 @inject Blazored.LocalStorage.ILocalStorageService LocalStorage
 
 <h1>To do list</h1>
 <div>
     <input type="text" @bind="todoInput">
-    <button type="submit" @onclick="addTodo">Add todo</button>
+    <button type="submit" @onclick="AddTodo">Add todo</button>
 </div>
 
 @foreach (var todo in todos)
 {
-    <div @onclick="@(() => toggleTodo(todo))" class="@(todo.Completed ? "completed": "")">@todo.Text</div>
+    <TodoItem TodoModel="todo" SaveTodos="@SaveTodos" RemoveTodo="@(()=>RemoveTodo(todo))"/>
 }
 
 
@@ -20,15 +20,12 @@
     public string todoInput { get; set; }
     public List<Todo> todos = new List<Todo>();
 
-
     protected override async Task OnInitializedAsync()
     {
-        var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");
-        var parsedTodos = JsonConvert.DeserializeObject<List<Todo>>(storedTodos);
-        todos = parsedTodos;
+        todos = await GetStoredTodosAsync();
     }
 
-    public void addTodo()
+    public void AddTodo()
     {
         todos.Add(new Todo()
         {
@@ -37,18 +34,23 @@
             Completed = false
         });
         todoInput = "";
-        saveTodos();
+        SaveTodos();
     }
 
-    public void toggleTodo(Todo todo)
+    public void RemoveTodo(Todo todo)
     {
-        todo.Completed = !todo.Completed;
-        saveTodos();
+        todos.Remove(todo);
+        SaveTodos();
     }
 
-    public void saveTodos()
+    public void SaveTodos()
     {
         LocalStorage.SetItemAsync("SavedTodos", JsonConvert.SerializeObject(todos));
     }
-}
 
+    private async Task<List<Todo>> GetStoredTodosAsync()
+    {
+        var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");
+        return JsonConvert.DeserializeObject<List<Todo>>(storedTodos);
+    }
+}
