@@ -89,6 +89,13 @@ using models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\dev\blazor\todolist\Pages\Index.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,10 +105,18 @@ using models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\dev\blazor\todolist\Pages\Index.razor"
+#line 19 "C:\dev\blazor\todolist\Pages\Index.razor"
       
     public string todoInput { get; set; }
-    public List<Todo> todos =new List<Todo>();
+    public List<Todo> todos = new List<Todo>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");
+        var parsedTodos = JsonConvert.DeserializeObject<List<Todo>>(storedTodos);
+        todos = parsedTodos;
+    }
 
     public void addTodo()
     {
@@ -112,16 +127,24 @@ using models;
             Completed = false
         });
         todoInput = "";
+        saveTodos();
     }
 
-    public void toggleTodo(Guid id)
+    public void toggleTodo(Todo todo)
     {
-        todos.Where(x => x.Id == id).FirstOrDefault().Completed = !todos.Where(x => x.Id == id).FirstOrDefault().Completed;
+        todo.Completed = !todo.Completed;
+        saveTodos();
+    }
+
+    public void saveTodos()
+    {
+        LocalStorage.SetItemAsync("SavedTodos", JsonConvert.SerializeObject(todos));
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService LocalStorage { get; set; }
     }
 }
 #pragma warning restore 1591

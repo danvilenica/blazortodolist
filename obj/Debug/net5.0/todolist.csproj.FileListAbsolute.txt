@@ -630,3 +630,9 @@ C:\dev\blazor\todolist\obj\Debug\net5.0\todolist.csproj.CopyComplete
 C:\dev\blazor\todolist\obj\Debug\net5.0\todolist.dll
 C:\dev\blazor\todolist\obj\Debug\net5.0\ref\todolist.dll
 C:\dev\blazor\todolist\obj\Debug\net5.0\todolist.pdb
+C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\dev\blazor\todolist\obj\Debug\net5.0\build-gz\TYPI2fo2.gz
+C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\dev\blazor\todolist\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\dev\blazor\todolist\obj\Debug\net5.0\build-gz\DnYmmatE.gz

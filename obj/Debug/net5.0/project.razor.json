@@ -8,55 +8,101 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -224022496,
+        "HashCode": -628760938,
         "Kind": "Components.Component",
-        "Name": "todolist.Shared.SurveyPrompt",
+        "Name": "todolist.Pages.Counter",
         "AssemblyName": "todolist",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Shared.SurveyPrompt"
+          "Common.TypeName": "todolist.Pages.Counter"
         }
       },
       {
-        "HashCode": 796085781,
+        "HashCode": -20574050,
         "Kind": "Components.Component",
-        "Name": "todolist.Shared.SurveyPrompt",
+        "Name": "todolist.Pages.Counter",
         "AssemblyName": "todolist",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "todolist.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "todolist.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Shared.SurveyPrompt",
+          "Common.TypeName": "todolist.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 669504250,
+        "Kind": "Components.Component",
+        "Name": "todolist.Pages.FetchData",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 529541429,
+        "Kind": "Components.Component",
+        "Name": "todolist.Pages.FetchData",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1961262929,
+        "Kind": "Components.Component",
+        "Name": "todolist.Pages.Index",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -634966491,
+        "Kind": "Components.Component",
+        "Name": "todolist.Pages.Index",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -190,6 +236,59 @@
         }
       },
       {
+        "HashCode": -224022496,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.SurveyPrompt",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 796085781,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.SurveyPrompt",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1368883372,
         "Kind": "Components.Component",
         "Name": "todolist.App",
@@ -219,105 +318,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "todolist.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -628760938,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.Counter",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -20574050,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.Counter",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "todolist.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 669504250,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.FetchData",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 529541429,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.FetchData",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "todolist.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1961262929,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.Index",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -634966491,
-        "Kind": "Components.Component",
-        "Name": "todolist.Pages.Index",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "todolist.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
