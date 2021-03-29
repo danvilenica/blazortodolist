@@ -105,8 +105,8 @@ using models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\dev\blazor\todolist\Pages\Index.razor"
-      
+#line 20 "C:\dev\blazor\todolist\Pages\Index.razor"
+ 
     public string todoInput { get; set; }
     public List<Todo> todos = new List<Todo>();
 
@@ -126,18 +126,15 @@ using models;
         todoInput = "";
         SaveTodos();
     }
-
     public void RemoveTodo(Todo todo)
     {
         todos.Remove(todo);
         SaveTodos();
     }
-
     public void SaveTodos()
     {
         LocalStorage.SetItemAsync("SavedTodos", JsonConvert.SerializeObject(todos));
     }
-
     private async Task<List<Todo>> GetStoredTodosAsync()
     {
         var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");

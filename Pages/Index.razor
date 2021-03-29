@@ -12,11 +12,12 @@
 
 @foreach (var todo in todos)
 {
-    <TodoItem TodoModel="todo" SaveTodos="@SaveTodos" RemoveTodo="@(()=>RemoveTodo(todo))"/>
+    <TodoItem TodoModel="todo" SaveTodos="@SaveTodos" RemoveTodo="@RemoveTodo"/>
 }
 
 
-@code{
+@code
+{
     public string todoInput { get; set; }
     public List<Todo> todos = new List<Todo>();
 
@@ -36,18 +37,15 @@
         todoInput = "";
         SaveTodos();
     }
-
     public void RemoveTodo(Todo todo)
     {
         todos.Remove(todo);
         SaveTodos();
     }
-
     public void SaveTodos()
     {
         LocalStorage.SetItemAsync("SavedTodos", JsonConvert.SerializeObject(todos));
     }
-
     private async Task<List<Todo>> GetStoredTodosAsync()
     {
         var storedTodos = await LocalStorage.GetItemAsync<string>("SavedTodos");
