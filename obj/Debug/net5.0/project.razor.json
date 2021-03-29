@@ -8,6 +8,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 1368883372,
+        "Kind": "Components.Component",
+        "Name": "todolist.App",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.App"
+        }
+      },
+      {
+        "HashCode": -1806174138,
+        "Kind": "Components.Component",
+        "Name": "todolist.App",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -628760938,
         "Kind": "Components.Component",
         "Name": "todolist.Pages.Counter",
@@ -103,6 +136,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "todolist.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -224022496,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.SurveyPrompt",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 796085781,
+        "Kind": "Components.Component",
+        "Name": "todolist.Shared.SurveyPrompt",
+        "AssemblyName": "todolist",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "todolist.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "todolist.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -236,59 +322,6 @@
         }
       },
       {
-        "HashCode": -224022496,
-        "Kind": "Components.Component",
-        "Name": "todolist.Shared.SurveyPrompt",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 796085781,
-        "Kind": "Components.Component",
-        "Name": "todolist.Shared.SurveyPrompt",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "todolist.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 449924677,
         "Kind": "Components.Component",
         "Name": "todolist.Shared.TodoItem",
@@ -374,39 +407,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "todolist.Shared.TodoItem",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1368883372,
-        "Kind": "Components.Component",
-        "Name": "todolist.App",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.App"
-        }
-      },
-      {
-        "HashCode": -1806174138,
-        "Kind": "Components.Component",
-        "Name": "todolist.App",
-        "AssemblyName": "todolist",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "todolist.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "todolist.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
