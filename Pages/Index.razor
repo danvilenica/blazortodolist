@@ -1,0 +1,35 @@
+﻿@page "/"
+@using models
+
+<h1>To do list</h1>
+<div>
+    <input type="text" @bind="todoInput">
+    <button type="submit" @onclick="addTodo">Add todo</button>
+</div>
+
+@foreach (var todo in todos)
+{
+    <div @onclick="@(() => toggleTodo(todo.Id))" class="@(todo.Completed ? "completed": "")">@todo.Text</div>
+}
+
+
+@code{
+    public string todoInput { get; set; }
+    public List<Todo> todos =new List<Todo>();
+
+    public void addTodo()
+    {
+        todos.Add(new Todo()
+        {
+            Id = Guid.NewGuid(),
+            Text = todoInput,
+            Completed = false
+        });
+        todoInput = "";
+    }
+
+    public void toggleTodo(Guid id)
+    {
+        todos.Where(x => x.Id == id).FirstOrDefault().Completed = !todos.Where(x => x.Id == id).FirstOrDefault().Completed;
+    }
+}
